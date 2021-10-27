@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2informatica.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkCyan" Padding="18" CornerRadius="0">
+            <Label Text="Deber Semana 2 : Calculo Calificaciones" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+        </Frame>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nota de seguimiento 1:" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtNS1" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Nota Examen:" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtNE1" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="EP:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtEPresultado"  Grid.Row="2" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="btnCalPorEP" Text="Calcular % EP" Clicked="btnCalPorEP_Clicked" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="txtPorEP"  Grid.Row="3" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center" />
+
+           
+
+
+
+            <Label Text="Nota de seguimiento 2:" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtNS2" Keyboard="Numeric" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Nota Examen 2:" Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="txtNE2" Keyboard="Numeric" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                <Label Text="EF:" Grid.Row="7" Grid.Column="0"/>
+                <Entry x:Name="txtEFresultado"  Grid.Row="7" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="btnCalPorEF" Text="Calcular % EF" Clicked="btnCalPorEF_Clicked" Grid.Row="8" Grid.Column="0"/>
+            <Entry x:Name="txtPorEF"  Grid.Row="8" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+          
+
+        </Grid>
+
+        <Button x:Name="btnCalProm" Text="Calcular Promedio Final" Clicked="BtnCalProm_Clicked"  />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="NOTA FINAL EP + EF:" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtNF"  Grid.Row="1" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+
+            <Label Text="ESTADO ESTUDIANTE:" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtEstado"  Grid.Row="2" Grid.Column="1" Keyboard="Numeric" IsEnabled="False" HorizontalTextAlignment="Center"/>
+        </Grid>
+
+        <Label Text="© Derechos Reservados 2021 Roberth Almache" HorizontalTextAlignment="Center" TextColor="ForestGreen"/>
+
+    </StackLayout>
+
+</ContentPage>
