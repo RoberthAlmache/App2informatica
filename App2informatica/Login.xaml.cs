@@ -21,13 +21,22 @@ namespace App2informatica
 
         private async void btnAbrir_Clicked(object sender, EventArgs e)
         {
-            //enviar datos como parametros y almacenar en variables
-            string usuario = txtUsuario.Text;
-            string contraseña = txtContraseña.Text;
+            
+                //enviar datos como parametros y almacenar en variables
+                string usuario = txtUsuario.Text; //estudiante2021   credenciales quemadas y que permiten el acceso a la siguiente ventana.
+            string contraseña = txtContraseña.Text; //uisrael2021
 
-            await Navigation.PushAsync(new MainPage(usuario, contraseña));
+            if (usuario == "estudiante2021" && contraseña == "uisrael2021")
+            {
+                await Navigation.PushAsync(new MainPage(usuario, contraseña));      
 
-           
+            }
+            else
+            {
+                await DisplayAlert("Advertencia.!", "Ingrese las credenciales correctas.", "OK");
+            }
+
+
         }
     }
 }

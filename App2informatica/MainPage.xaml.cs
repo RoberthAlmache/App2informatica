@@ -10,7 +10,7 @@ namespace App2informatica
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage(string usuario, string contraseña)
+        public MainPage(string usuario = "roberth", string contraseña = "123")
         {
             InitializeComponent();
             lblUsuario.Text = usuario;
