@@ -11,7 +11,7 @@ namespace App2informatica
             InitializeComponent();
             //Ventana que se ejecuta
             //MainPage = new view_Dos();
-            MainPage = new MainPage();
+            MainPage = new NavigationPage  (new Login());
         }
 
       
